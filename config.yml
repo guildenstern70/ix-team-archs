@@ -1,0 +1,46 @@
+baseURL: "http://example.org/"
+title: IX Team Archs
+paginate: 5
+theme: PaperMod
+menu:
+  main:
+    - name: Archivio
+      url: archives
+      weight: 5
+    - name: Ricerca
+      url: search/
+      weight: 10
+    - name: Tags
+      url: tags/
+      weight: 10
+    - name: Categorie
+      url: categories/
+      weight: 10
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Il blog del team di Architetti IX Team"
+  author: Alessio Saltarin
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  images: [ "ix-socialtile.jpg" ]
+  homeInfoParams:
+    Title: "IX Team Archs"
+    Content: >
+      Benvenuti nel sito IBM degli Architect IX Italy.
+      - **IX Team Archs** è una collezione di blog tecnici degli architetti di IX Italy.
+      - 🌟 Ci piace la tecnologia, infatti...
+      - **IX Team Archs** è basato sul JAMStack [Hugo](https://gohugo.io/).
+      - Hugo è scritto in [Go](https://golang.org/)
+  socialIcons:
+    - name: github
+      url: "https://github.com/adityatelange/hugo-PaperMod"
+    - name: RsS
+      url: "index.xml"
+
